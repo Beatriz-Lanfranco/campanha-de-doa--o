@@ -910,7 +910,7 @@ section,
   padding: 1.5rem;
   border-radius: 12px;
   box-shadow: 0 10px 40px color-mix(in srgb, var(--default-color), transparent 85%);
-  width: 100%;
+  width: 300%;
   height: auto;
   max-width: none;
   display: flex;
