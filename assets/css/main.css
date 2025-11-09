@@ -1340,6 +1340,10 @@ section,
 }
 
 .why-us .image-wrapper img {
+  width: 100% !important;
+  height: 450px !important;
+  object-fit: cover !important;
+  object-position: center !important;
   border-radius: 8px;
   box-shadow: 0 20px 40px color-mix(in srgb, var(--default-color), transparent 85%);
   transition: transform 0.4s ease-in-out;
@@ -1347,6 +1351,12 @@ section,
 
 .why-us .image-wrapper img:hover {
   transform: translateY(-8px);
+}
+
+@media (max-width: 768px) {
+  .why-us .image-wrapper img {
+    height: 350px !important;
+  }
 }
 
 .why-us .features-grid {
