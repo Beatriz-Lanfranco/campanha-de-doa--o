@@ -896,16 +896,23 @@ section,
 .hero .hero-image {
   position: relative;
   width: 100%;
-  max-width: 700px;  /* aumenta o container */
+  max-width: 700px;
 }
 
 .hero .hero-image img {
   width: 100%;
-  height: auto;
-  min-height: 500px;  /* força uma altura mínima */
+  height: 500px;
   object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 20px 60px color-mix(in srgb, var(--default-color), transparent 85%);
+}
+
+@media (max-width: 768px) {
+  .hero .hero-image img {
+    height: 400px;
+  }
+}
+
 .hero .hero-image .floating-card {
   position: absolute;
   bottom: 20px;
@@ -914,41 +921,30 @@ section,
   padding: 1.5rem;
   border-radius: 12px;
   box-shadow: 0 10px 40px color-mix(in srgb, var(--default-color), transparent 85%);
-  width: 300%;
-  height: auto;
-  max-width: none;
+  max-width: 250px;
   display: flex;
   align-items: center;
   gap: 1rem;
-  min-width: 200px;
 }
 
 @media (max-width: 768px) {
   .hero .hero-image .floating-card {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  background: var(--surface-color);
-  padding: 1.5rem;
-  border-radius: 12px;
-  box-shadow: 0 10px 40px color-mix(in srgb, var(--default-color), transparent 85%);
-  max-width: 250px;  /* MUDE de width: 300% para max-width */
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
+    bottom: 10px;
+    left: 10px;
+    padding: 1rem;
+    max-width: 200px;
+  }
+} /* <-- FALTAVA FECHAR AQUI */
 
 .hero .hero-image .floating-card .card-icon {
   width: 50px;
   height: 50px;
   background: color-mix(in srgb, var(--accent-color), transparent 90%);
-  width: 100%; /* Garante que a imagem ocupe a largura total do contêiner */
-  height: auto; /* Mantém a proporção da imagem para que não fique distorcida */
-  max-width: none;
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .hero .hero-image .floating-card .card-icon i {
@@ -973,15 +969,15 @@ section,
   .hero {
     padding: 80px 0 60px;
   }
-
+  
   .hero::before {
     display: none;
   }
-
+  
   .hero .row {
     flex-direction: column-reverse;
   }
-
+  
   .hero .col-lg-6:first-child {
     margin-top: 3rem;
   }
