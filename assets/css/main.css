@@ -895,16 +895,17 @@ section,
 
 .hero .hero-image {
   position: relative;
+  width: 100%;
+  max-width: 700px;  /* aumenta o container */
 }
 
 .hero .hero-image img {
-  width: 100%;       /* faz a imagem ocupar toda a coluna */
-  height: 600px;      /* mantém proporção */
-  object-fit: cover; /* cobre o espaço se quiser um visual mais cheio */
+  width: 100%;
+  height: auto;
+  min-height: 500px;  /* força uma altura mínima */
+  object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 20px 60px color-mix(in srgb, var(--default-color), transparent 85%);
-}
-
 .hero .hero-image .floating-card {
   position: absolute;
   bottom: 20px;
@@ -924,11 +925,17 @@ section,
 
 @media (max-width: 768px) {
   .hero .hero-image .floating-card {
-    bottom: 10px;
-    left: 10px;
-    padding: 1rem;
-    min-width: 160px;
-  }
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: var(--surface-color);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px color-mix(in srgb, var(--default-color), transparent 85%);
+  max-width: 250px;  /* MUDE de width: 300% para max-width */
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .hero .hero-image .floating-card .card-icon {
