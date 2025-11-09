@@ -900,7 +900,8 @@ section,
 
 .quemsomos .hero-image img {
   width: 100% !important;
-  height: 450px !important;
+  height: auto !important;  /* deixa a altura automática */
+  max-height: 500px;  /* limita a altura máxima */
   object-fit: contain !important;
   border-radius: 12px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
