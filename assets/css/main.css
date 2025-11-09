@@ -900,7 +900,7 @@ section,
 
 .quemsomos .hero-image img {
   width: 100% !important;
-  height: 550px !important;
+  height: 450px !important;
   object-fit: cover !important;
   border-radius: 12px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
@@ -909,7 +909,7 @@ section,
 
 @media (max-width: 768px) {
   .quemsomos .hero-image img {
-    height: 400px !important;
+    height: 350px !important;
   }
 }
 
