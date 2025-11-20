@@ -1370,7 +1370,7 @@ section,
 
 .why-us .feature-item:hover .icon-wrapper {
   background-color: var(--accent-color);
-  color: var(--contrast-color);
+  color: #B22222;
   transform: scale(1.1);
 }
 
