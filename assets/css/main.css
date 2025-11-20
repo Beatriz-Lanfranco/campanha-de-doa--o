@@ -1389,7 +1389,7 @@ section,
   height: 70px;
   border-radius: 50%;
   background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
-  color: var(--accent-color);
+  color: #B22222;
   display: flex;
   align-items: center;
   justify-content: center;
