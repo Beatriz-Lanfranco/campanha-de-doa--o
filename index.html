@@ -1038,44 +1038,43 @@ na chance de alguém ter uma vida inteira.</p>
                 <h3>Deixe uma mensagem</h3>
               </div>
 
-                  <form action="forms/contact.php" method="post" class="php-email-form">
+              <form action="https://api.web3forms.com/submit" method="POST" class="php-email-form">
 
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label>Nome</label>
-                      <input type="text" name="name" required="">
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="form-group">
-                      <label>Email</label>
-                      <input type="email" name="email" required="">
-                    </div>
-                  </div>
-                </div>
+  <!-- Chave de acesso -->
+  <input type="hidden" name="access_key" value="eab7bc69-43f0-4475-acf7-60c298dab26f">
 
-                <div class="form-group">
-                  <label>Tipo sanguíneo</label>
-                  <input type="text" name="subject" required="">
-                </div>
+  <div class="row">
+    <div class="col-md-6 form-group">
+      <label for="name">Nome</label>
+      <input type="text" name="name" id="name" class="form-control" placeholder="Digite seu nome" required>
+    </div>
 
-                <div class="form-group">
-                  <label for="projectMessage">Sua mensagem</label>
-                  <textarea name="message" id="projectMessage" rows="5" required=""></textarea>
-                </div>
+    <div class="col-md-6 form-group mt-3 mt-md-0">
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" class="form-control" placeholder="Seu email" required>
+    </div>
+  </div>
 
-                <div class="my-3">
-                  <div class="loading">Enviar</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-                </div>
+  <div class="form-group mt-3">
+    <label for="blood">Tipo sanguíneo</label>
+    <input type="text" name="blood_type" id="blood" class="form-control" placeholder="Ex: A+, O-, AB+" required>
+  </div>
 
-                <button type="submit" class="submit-btn">
-                  <span>Enviar</span>
-                  <i class="bi bi-arrow-right"></i>
-                </button>
+  <div class="form-group mt-3">
+    <label for="message">Mensagem</label>
+    <textarea name="message" id="message" rows="5" class="form-control" placeholder="Escreva sua mensagem" required></textarea>
+  </div>
 
+  <div class="my-3">
+    <div class="loading">Enviando...</div>
+    <div class="error-message"></div>
+    <div class="sent-message">Mensagem enviada com sucesso! Obrigado ❤️</div>
+  </div>
+
+  <button type="submit" class="submit-btn">
+    <span>Enviar</span>
+    <i class="bi bi-arrow-right"></i>
+  </button>
               </form>
 
 
