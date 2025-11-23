@@ -854,7 +854,7 @@ section,
 
 .hero .hero-cta .btn-secondary i {
   font-size: 1.5rem;
-  color: var(--accent-color);
+  color: #ffde59;
 }
 
 .hero .hero-cta .btn-secondary:hover {
