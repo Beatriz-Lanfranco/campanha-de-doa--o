@@ -843,7 +843,7 @@ section,
 }
 
 .hero .hero-cta .btn-secondary {
-  color: var(--heading-color);
+  color: #ffde59;
   text-decoration: none;
   display: flex;
   align-items: center;
